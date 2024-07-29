@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Press The Button</title>
+</head>
+<body onload="setButtonsDisable(true);">
+  <h1>Press The Button!</h1>
+<div id="text">
+  <div>
+    <div>Time left: <span id="time"></span></div>
+    <div>Amount of Presses: <span id="presses">0</span> </div>
+  </div>
+  <input type="button" id="start" value="Start" onclick="ManageGame()">
+  <input type="button" id="goal" value="press me!" onclick="updatePresses()">
+  <script src="press_the_button.js"></script>
+</div>
+</body>
+</html>

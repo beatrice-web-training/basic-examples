@@ -1,0 +1,58 @@
+/* דוגמה
+selecor {property: value}*/
+h1 {
+   color: #36CFFF;
+}
+
+.black {
+   color: #000000;
+}
+h1.black {
+   color: #000000;
+}
+/* צבעים */
+h1.a {
+  color:red;
+}
+h1.b {
+  color: #003333;
+}
+/* טקסט*/
+h1.fo {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.it {
+  font-style: italic;
+}
+
+.co {
+  color: blue;
+}
+
+.dir {
+  direction = rtl; /* or ltr*/
+}
+
+.si {
+  font-size: small; /* or large*/
+}
+
+.ri {
+  text-align: right;
+}
+
+.ce {
+  text-align: center;
+}
+
+.le {
+  text-align: left;
+}
+.de {
+  text-decoration: underline;
+}
+/* רקע */
+body {
+  background-color: yellow;
+}

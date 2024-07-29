@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Program</title>
+</head>
+<body id="b">
+	<div id="d"> </div>
+    <script type="text/javascript">
+    window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
+    alert('Error: ' + errorMsg + ' Script: ' + url + ' Line: ' + lineNumber
+    + ' Column: ' + column + ' StackTrace: ' +  errorObj);
+}
+	function httpGet(theUrl)
+	{
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+
+
+		return xmlHttp.responseText;
+	}
+	var url = "https://www.python.org/static/opengraph-icon-200x200.png"
+	var c = httpGet(url)
+	window.alert(c)
+	var i = document.createElement("img");
+	i.src = url;
+	document.getElementById("d").appendChild(i)
+	
+    </script>
+</body>
+</html>
